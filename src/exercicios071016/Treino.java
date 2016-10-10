@@ -1,11 +1,12 @@
 package exercicios071016;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Treino {
 	
 	public Treino() {
-		exercicio2();
+		exercicio3();
 		
 	}
 		
@@ -46,6 +47,23 @@ public class Treino {
 		else
 			System.out.print("O numero 3 e o maior ");
 		
-	
-
-}}
+}
+		private void exercicio3(){
+			
+			int rand = (new Random()).nextInt(5);
+			
+			for (int i = 0; i < 5; i++){
+				
+				System.out.println("Introduza a " + (i+1) + " tentativa");
+				int tent = ((new Scanner(System.in)).nextInt());
+				
+				if (tent == rand)
+					System.out.println("Acertou " + (i+1) + " tentativa");
+				
+				else
+					System.out.println("Va tentando");
+			}
+			
+		}
+		
+		}
